@@ -1,0 +1,427 @@
+/*HEADER*/
+
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.menu {
+	font-family: 'Lexend Tera', sans-serif;
+	font-weight: 200;
+	text-transform:  uppercase;
+}
+
+.menu ul li a {
+	color: black;
+	text-decoration: none;
+	border:  1px solid black;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+}
+
+.logo {
+	display: inline-block;
+	width:  100%;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.menu_y_carrito {
+	display:  flex;
+	justify-content: center;
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+header {
+	background-color: #ffddbf;
+}
+
+.boton_menu,
+.boton_buscar {
+	display: none;
+}
+
+@media (max-width: 1015px) {
+			.menu {
+				font-size: 13px;
+				display: inline-block;
+				text-align: center;
+			}
+
+			.menu ul li a {
+				display: flex;
+				justify-content: center;
+				margin-top: 5px;
+			}
+
+}
+
+@media (max-width: 480px) {
+
+			.logo img { 
+				width:  100%;
+				max-width: 200px;
+				padding:  20px;
+			 }
+
+			 .header {
+			 	display: flex;
+			 }
+
+			 .boton_buscar,
+			 .carrito_del_header {
+			 	display: flex;
+			 	justify-content: center;
+			 	align-items: center;
+			 }
+
+			 .imagenes_menu img {
+			 	width: 50px;
+			 	padding-right: 25px;
+			 }
+
+			 .menu {
+			 	font-size: 15px;
+			 	display: inline-block;
+			 	text-align: center;
+			 	padding: 0px;
+			 	margin: 0px;
+			 }
+
+			 .menu ul li a {
+			 	display: inline-block;
+			 	text-align: center;
+			 	vertical-align: middle;
+			 	margin-right: 5px;
+			 }
+
+			 /* Como seria el diseño si en vez del menu pusiera un icono
+
+			 .boton_menu {
+				display:  flex;
+				justify-content: center;
+				align-items: center;
+			 } 
+			
+			.menu {
+				display:  none;
+			}
+
+			En el media query no estaria .menu ul li a
+
+			 */
+
+}
+
+
+/*HOME*/
+
+
+.titulo_buscar_banner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "tituloprincipal barrabuscar"
+						 "bannerimg bannerimg";
+	width: 80%;
+	margin: auto;
+}
+
+.titulo {
+	grid-area: tituloprincipal;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+
+}
+
+.buscar {
+	grid-area: barrabuscar;
+}
+
+.banner {
+	grid-area: bannerimg;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo p {
+	display: inline-block;
+	text-align: center;
+}
+
+
+.banner {
+	font-size: 0px;
+	background-image: url(../imagenes/jewelry-paris.png);
+	height: 580px;
+	width: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: auto;
+}
+
+.productos {
+	border:  2px solid black;
+	height:  490px;
+	width: 255px;
+	background-color: lightgrey;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 40px;
+}
+
+.productos_uno,
+.productos_dos {
+	display: flex;
+	justify-content: space-evenly;
+	column-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.productos_dos {
+	margin-bottom: 40px;
+}
+
+.productos > div {
+	display: inline-block;
+	text-align: center;
+	width: 255px;
+}
+
+@media (max-width: 480px) {
+			.banner {
+				display: none;
+			}
+
+			.form {
+				display: none !important;
+			}
+
+			.titulo_buscar_banner {
+				grid-template-areas: "tituloprincipal tituloprincipal";
+				width: 90%;
+			}
+
+			.titulo p {
+				display: flex;
+				justify-content: center;
+				font-size: 25px;
+			}
+}
+
+@media (max-width: 1015px) {
+			.banner {
+				height: 400px;
+			}
+}
+
+
+/*JOYERIA*/
+
+
+.aros,
+.collares,
+.anillos,
+.dijes {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	column-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.form_productos {
+	display: flex;
+	justify-content: center;
+}
+
+.huno_productos,
+.hdos_productos {
+	font-family: 'Lexend Tera', sans-serif;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+
+/*PREGUNTAS*/
+
+.preguntas_parrafo {
+	font-family: 'Quicksand', sans-serif;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+
+}
+
+.preguntas_frecuentes,
+.hdos_preguntas {
+	font-family: 'Lexend Tera', sans-serif;
+	text-transform: uppercase;
+}
+
+.preguntas_frecuentes,
+.hdos_preguntas {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.pregunta_dos span a {
+	color: black;
+}
+
+.pregunta_cuatro li a {
+	color: black;
+}
+
+@media (max-width: 480px) {
+			.hdos_preguntas {
+				display: inline-block;
+				text-align: center;
+			}
+
+}
+
+/*NOSOTROS*/
+
+.main_nosotros {
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.huno_nosotros {
+	font-family: 'Lexend Tera', sans-serif;
+	padding-top: 50px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+}
+
+.info {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.parrafo_nosotros {
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+
+
+.imagen_banco_joyeria {
+	display: flex;
+	justify-content: center;
+	font-size: 0px;
+	background-image: url(../imagenes/banco_de_joyeria.jpg);
+	height: 646px;
+	width: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 50px;
+}
+
+@media (max-width: 1165px) {
+			.imagen_banco_joyeria {
+				background-size: 100%;
+				max-width: auto;
+			}
+}
+
+@media (max-width: 850px) {
+			.imagen_banco_joyeria {
+				height: 400px;
+			}
+
+}
+
+/*CONTACTO*/
+
+.huno_contacto,
+.hdos_contacto {
+
+	font-family: 'Lexend Tera', sans-serif;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.form_contactos {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.rellenar {
+	border: 2px solid #c3c3c3;
+	padding: 15px;
+}
+
+.rellenar > div {
+	padding-top: 5px;
+}
+
+.robot,
+.submit {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+@media (max-width: 480px) {
+			.huno_contacto,
+			.hdos_contacto {
+				display: inline-block;
+				text-align: center;
+				padding-right: 20px;
+				padding-left: 20px;
+			}
+}
+
+/*FOOTER*/
+
+
+.redes {
+	display:  flex;	
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	width:  auto;
+	margin-top: auto;
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+
+.footer {
+	background-color: #ffddbf;
+
+}
+
+.disclaimer {
+	font-size: 16px;
+	font-family: 'Lexend Tera', sans-serif;
+	font-weight: 200;
+	padding: 50px;
+
+}
+
