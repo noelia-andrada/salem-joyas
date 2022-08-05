@@ -42,7 +42,7 @@ body {
 }
 
 header {
-	background-color: #ffddbf;
+	background-image: linear-gradient(to bottom, #ffddbf 0%, transparent 100%);
 }
 
 .boton_menu,
@@ -412,8 +412,16 @@ header {
 	padding-bottom: 50px;
 }
 
+.redes a img:hover {
+	transform: scale(1.2);
+}
+
+.redes a img {
+	transition: transform 0.1s ease-in;
+}
+
 .footer {
-	background-color: #ffddbf;
+	background-image: linear-gradient(to top, #ffddbf 0%, transparent 100%);
 
 }
 
