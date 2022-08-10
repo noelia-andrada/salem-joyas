@@ -10,14 +10,10 @@ body {
 
 /*HEADER*/
 
-.menu_desktop,
-.item_menu a {
-
-}
 
 .menu_desktop ul li a,
 .item_menu a {
-		font-family: 'Lexend Tera', sans-serif;
+	font-family: 'Lexend Tera', sans-serif;
 	font-weight: 200;
 	text-transform:  uppercase;
 	color: black;
@@ -115,32 +111,6 @@ header {
 				justify-content: center;
 				align-items: center;
 			 } 
-		
-
-			 /* Como seria el diseño si en vez del menu pusiera un icono
-
-		
-			
-				 .menu_desktop {
-			 	font-size: 15px;
-			 	display: inline-block;
-			 	text-align: center;
-			 	padding: 0px;
-			 	margin: 0px;
-			 }
-
-			  .menu_desktop ul li a {
-			 	display: inline-block;
-			 	text-align: center;
-			 	vertical-align: middle;
-			 	margin-right: 5px;
-			 }
-
-
-			En el media query no estaria .menu ul li a
-
-			 */
-
 }
 
 
@@ -410,6 +380,9 @@ header {
 	display: flex;
 	justify-content: center;
 	padding-top: 20px;
+}
+.submit .btn {
+	background-color: #ffddbf;
 }
 
 @media (max-width: 480px) {
