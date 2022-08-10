@@ -256,8 +256,6 @@ header {
 
 .preguntas_parrafo {
 	font-family: 'Quicksand', sans-serif;
-	margin-right: 100px;
-	margin-left: 100px;
 	margin-bottom: 100px;
 	margin-top: 50px;
 
@@ -267,13 +265,14 @@ header {
 .hdos_preguntas {
 	font-family: 'Lexend Tera', sans-serif;
 	text-transform: uppercase;
+	margin: 20px 0;
 }
 
-.preguntas_frecuentes,
-.hdos_preguntas {
-	display: inline-block;
-	text-align: center;
-	width: 100%;
+.pregunta_uno,
+.pregunta_dos,
+.pregunta_tres,
+.pregunta_cuatro {
+	margin-bottom: 20px;
 }
 
 .pregunta_dos span a {
@@ -284,13 +283,6 @@ header {
 	color: black;
 }
 
-@media (max-width: 480px) {
-			.hdos_preguntas {
-				display: inline-block;
-				text-align: center;
-			}
-
-}
 
 /*NOSOTROS*/
 
