@@ -6,14 +6,17 @@ body {
 	margin: 0px;
 }
 
+* {
+	box-sizing: border-box;
+}
 
-.menu {
+.menu_uno {
 	font-family: 'Lexend Tera', sans-serif;
 	font-weight: 200;
 	text-transform:  uppercase;
 }
 
-.menu ul li a {
+.menu_uno ul li a {
 	color: black;
 	text-decoration: none;
 	border:  1px solid black;
@@ -24,7 +27,7 @@ body {
 
 }
 
-.logo {
+.logo_img {
 	display: inline-block;
 	width:  100%;
 	text-align: center;
@@ -37,7 +40,7 @@ body {
 	justify-content: center;
 }
 
-.menu ul li {
+.menu_uno ul li {
 	display: inline-block;
 }
 
@@ -51,13 +54,13 @@ header {
 }
 
 @media (max-width: 1015px) {
-			.menu {
+			.menu_uno {
 				font-size: 13px;
 				display: inline-block;
 				text-align: center;
 			}
 
-			.menu ul li a {
+			.menu_uno ul li a {
 				display: flex;
 				justify-content: center;
 				margin-top: 5px;
@@ -67,7 +70,7 @@ header {
 
 @media (max-width: 480px) {
 
-			.logo img { 
+			.logo_img img { 
 				width:  100%;
 				max-width: 200px;
 				padding:  20px;
@@ -86,10 +89,26 @@ header {
 
 			 .imagenes_menu img {
 			 	width: 50px;
-			 	padding-right: 25px;
+			 	height: auto;
+			 	padding: 5px;
 			 }
 
-			 .menu {
+			.menu_uno {
+				display:  none;
+			 }
+
+			 .boton_menu {
+				display:  flex;
+				justify-content: center;
+				align-items: center;
+			 } 
+		
+
+			 /* Como seria el diseño si en vez del menu pusiera un icono
+
+		
+			
+				 .menu_uno {
 			 	font-size: 15px;
 			 	display: inline-block;
 			 	text-align: center;
@@ -97,24 +116,13 @@ header {
 			 	margin: 0px;
 			 }
 
-			 .menu ul li a {
+			  .menu_uno ul li a {
 			 	display: inline-block;
 			 	text-align: center;
 			 	vertical-align: middle;
 			 	margin-right: 5px;
 			 }
 
-			 /* Como seria el diseño si en vez del menu pusiera un icono
-
-			 .boton_menu {
-				display:  flex;
-				justify-content: center;
-				align-items: center;
-			 } 
-			
-			.menu {
-				display:  none;
-			}
 
 			En el media query no estaria .menu ul li a
 
@@ -139,6 +147,8 @@ header {
 	grid-area: tituloprincipal;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 
 }
 
