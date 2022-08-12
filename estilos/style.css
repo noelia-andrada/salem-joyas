@@ -61,6 +61,15 @@ header {
 	border:  0;
 }
 
+.menu_desktop a {
+	transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.menu_desktop a:hover {
+	box-shadow: inset 124px 0px 0px 20px black;
+	color: white;
+}
+
 
 @media (max-width: 1015px) {
 			.menu_desktop {
