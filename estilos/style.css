@@ -61,6 +61,10 @@ header {
 	border:  0;
 }
 
+.desplegable .item_menu:active {
+	background-color: transparent;
+}
+
 .menu_desktop a {
 	transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
@@ -358,6 +362,7 @@ header {
 	display: flex;
 	justify-content: center;
 	text-transform: uppercase;
+	margin: 40px 0;
 }
 
 .form_contactos {
