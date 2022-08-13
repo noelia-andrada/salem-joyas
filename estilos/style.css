@@ -11,6 +11,17 @@ body {
 /*HEADER*/
 
 
+.header_img {
+	font-size: 0px;
+	background-image: url(../imagenes/header.png);
+	height: 590px;
+	width: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: auto;
+}
+
 .menu_desktop ul li a,
 .item_menu a {
 	font-family: 'Lexend Tera', sans-serif;
