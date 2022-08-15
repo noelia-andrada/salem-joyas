@@ -12,14 +12,36 @@ body {
 
 
 .header_img {
-	font-size: 0px;
-	background-image: url(../imagenes/header.png);
-	height: 590px;
-	width: auto;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	max-width: auto;
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: url("../imagenes/header.png") top center no-repeat;
+	background-size: 100% auto;
+}
+
+header {
+	padding-bottom: 3%
+}
+
+@media ( max-width: 1190px ) {
+
+	.header_img {
+		background-image: url("../imagenes/header_mobile.png");
+		background-size: 1400px auto
+	}
+
+}
+
+@media ( max-width: 480px ) {
+
+	.header_img {
+		background-image: url("../imagenes/header_mobile.png");
+		background-size: 765px auto
+	}
+
 }
 
 .menu_desktop ul li a,
@@ -27,13 +49,18 @@ body {
 	font-family: 'Lexend Tera', sans-serif;
 	font-weight: 200;
 	text-transform:  uppercase;
-	color: black;
+	color: white;
 	text-decoration: none;
-	border:  1px solid black;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-right: 20px;
-	padding-left: 20px;
+	border: 1px solid white;
+	padding: 3px 20px;
+}
+
+@media ( max-width: 480px ) {
+
+	.item_menu a {
+		color: black;
+		border-color: black;
+	}
 
 }
 
@@ -45,22 +72,18 @@ body {
 .logo_img {
 	display: inline-block;
 	width:  100%;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	text-align: left;
+	padding: 2%;
 }
 
 .menu_y_carrito {
 	display:  flex;
-	justify-content: center;
+	justify-content: end;
+	padding-right:  5%;
 }
 
 .menu_desktop ul li {
 	display: inline-block;
-}
-
-header {
-	background-image: linear-gradient(to bottom, #ffddbf 0%, transparent 100%);
 }
 
 .boton_menu,
@@ -72,17 +95,19 @@ header {
 	border:  0;
 }
 
-.desplegable .item_menu:active {
-	background-color: transparent;
-}
-
 .menu_desktop a {
 	transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .menu_desktop a:hover {
-	box-shadow: inset 124px 0px 0px 20px black;
-	color: white;
+	box-shadow: inset 124px 0px 0px 20px white;
+	color: black;
+}
+
+.menu_desktop,
+.carrito_del_header {
+	padding-top: 5%;
+
 }
 
 
