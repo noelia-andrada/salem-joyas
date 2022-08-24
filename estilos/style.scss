@@ -225,13 +225,18 @@ header {
 	font-weight: 600;
 	font-size: 20px;
 }
+
+@mixin display($display) {
+	display: $display
+}
+
 .parrafo_nosotros {
-	display: inline-block;
+	@include display(inline-block);
 	text-align: center;
 	line-height: 40px;
 }
 .imagen_banco_joyeria {
-	display: flex;
+	@include display(flex);
 	justify-content: center;
 	font-size: 0px;
 	background-image: url(../imagenes/banco_de_joyeria.jpg);
