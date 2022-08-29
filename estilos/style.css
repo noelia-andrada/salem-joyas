@@ -21,9 +21,9 @@ header {
 
 .menu_desktop {
   padding-top: 5%; }
-  .menu_desktop ul li {
+  .menu_desktop li {
     display: inline-block; }
-    .menu_desktop ul li a {
+    .menu_desktop li a {
       font-family: "Lexend Tera", sans-serif;
       font-weight: 200;
       text-transform: uppercase;
@@ -31,12 +31,11 @@ header {
       text-decoration: none;
       border: 1px solid white;
       padding: 3px 20px;
-      background-color: black; }
-  .menu_desktop a {
-    transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out; }
-    .menu_desktop a:hover {
-      box-shadow: inset 124px 0px 0px 20px white;
-      color: black; }
+      background-color: black;
+      transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out; }
+      .menu_desktop li a:hover {
+        box-shadow: inset 124px 0px 0px 20px white;
+        color: black; }
 
 .item_menu {
   font-family: "Lexend Tera", sans-serif;
@@ -292,7 +291,7 @@ header {
     display: inline-block;
     text-align: center;
     padding: 2% 0; }
-    .menu_desktop ul li a {
+    .menu_desktop li a {
       display: flex;
       justify-content: center;
       margin-top: 5px; }
