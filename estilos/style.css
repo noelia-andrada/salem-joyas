@@ -112,8 +112,9 @@ header {
   align-items: center; }
 
 .productos {
-  border: 2px solid black;
-  height: 490px;
+  border: 1px solid grey;
+  border-radius: 15px 0px;
+  height: 495px;
   width: 255px;
   background-color: lightgrey;
   font-size: 16px;
@@ -123,6 +124,8 @@ header {
     display: inline-block;
     text-align: center;
     width: 255px; }
+    .productos > div img {
+      margin-bottom: 10px; }
 
 .productos_uno,
 .productos_dos {
