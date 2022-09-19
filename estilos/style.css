@@ -141,6 +141,24 @@ header {
 .productos_dos {
   margin-bottom: 40px; }
 
+.vermas {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  background-color: lightgrey;
+  font-weight: 700;
+  margin-top: 2%;
+  transition: color 0.1s ease-in, background-color 0.1s ease-in; }
+  .vermas:hover {
+    color: white;
+    background-color: black; }
+
 .aros,
 .collares,
 .anillos,
