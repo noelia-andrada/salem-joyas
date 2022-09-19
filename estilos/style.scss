@@ -305,7 +305,7 @@ header {
 	width: auto;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin: 50px;
+	margin: 5%;
 }
 
 .comentarios {
@@ -447,10 +447,19 @@ header {
 	header {
 		padding: 0;
 	}
+
 	.button_anillo {
 		img {
 			height: 85px;
 		}
+	}
+
+	.huno_nosotros {
+		padding-top: 9%;
+	}
+
+	.huno_productos {
+		margin: 7%;
 	}
 }
 
@@ -528,6 +537,7 @@ header {
 		background-image: url("../imagenes/header_mobile.png");
 		background-size: 765px auto;
 	}
+
 	.item_menu {
 		a {
 			color: black;
@@ -542,6 +552,7 @@ header {
 			padding: 20px;
 		}
 	}
+
 	.header {
 		display: flex;
 	}
@@ -552,7 +563,6 @@ header {
 		align-items: center;
 		padding: 0 2%;
 	}
-
 
 	.imagenes_menu {
 		img {
@@ -597,6 +607,10 @@ header {
 		display: none;
 	}
 
+	.imagen_banco_joyeria {
+		margin: 0;
+	}
+
 	.huno_contacto,
 	.hdos_contacto {
 		display: inline-block;
@@ -604,4 +618,13 @@ header {
 		padding-right: 20px;
 		padding-left: 20px;
 	}
+
+.redes {
+	padding-top: 20%;
+	img {
+		height: 60px;
+		width: 60px;
+	}
+}
+
 }
