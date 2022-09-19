@@ -345,11 +345,11 @@ header {
 	justify-content: center;
 	padding-top: 30px;
 	padding-bottom: 50px;
+	column-gap: 2%;
 }
 
 .formulario {
-	display: flex;
-	justify-content: center;
+	display: inline-block;
 }
 
 .rellenar {
@@ -481,6 +481,14 @@ header {
 	.anillero {
 		max-width: 700px;
 		width: $width;
+	}
+
+	.form_contactos {
+		flex-wrap: wrap;
+	}
+
+	.htres_contactos {
+		margin: 10% 0;
 	}
 
 }

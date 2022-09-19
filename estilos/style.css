@@ -277,11 +277,11 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  column-gap: 2%; }
 
 .formulario {
-  display: flex;
-  justify-content: center; }
+  display: inline-block; }
 
 .rellenar {
   border: 2px solid #c3c3c3;
@@ -371,7 +371,11 @@ header {
     max-width: auto; }
   .anillero {
     max-width: 700px;
-    width: 100%; } }
+    width: 100%; }
+  .form_contactos {
+    flex-wrap: wrap; }
+  .htres_contactos {
+    margin: 10% 0; } }
 
 @media (max-width: 850px) {
   .imagen_banco_joyeria {
