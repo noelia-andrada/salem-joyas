@@ -170,10 +170,6 @@ header {
   column-gap: 10px;
   flex-wrap: wrap; }
 
-.form_productos {
-  display: flex;
-  justify-content: center; }
-
 .huno_productos,
 .hdos_productos {
   font-family: "Lexend Tera", sans-serif;
@@ -181,6 +177,14 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 50px; }
+
+.huno_productos {
+  margin-bottom: 5%; }
+
+.hdos_productos {
+  border: 1px solid grey;
+  background-color: lightgrey;
+  width: 100%; }
 
 .preguntas_parrafo {
   font-family: "Quicksand", sans-serif;

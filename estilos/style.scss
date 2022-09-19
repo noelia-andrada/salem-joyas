@@ -208,11 +208,6 @@ header {
 	flex-wrap: wrap;
 }
 
-.form_productos {
-	display: flex;
-	justify-content: center;
-}
-
 .huno_productos,
 .hdos_productos {
 	font-family: $font-lexend;
@@ -220,6 +215,16 @@ header {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
+}
+
+.huno_productos {
+	margin-bottom: 5%;
+}
+
+.hdos_productos {
+	border: 1px solid grey;
+	background-color: lightgrey;
+	width: $width;
 }
 
 .preguntas_parrafo {
