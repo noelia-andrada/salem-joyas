@@ -44,6 +44,7 @@ header {
 .item_menu {
   font-family: "Lexend Tera", sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
   display: inline-block;
   text-align: center; }
 
@@ -61,13 +62,12 @@ header {
 .logo_img img {
   padding: 12%; }
 
-.boton_menu {
-  display: none; }
-
+.boton_menu,
 .boton_buscar {
   display: none; }
 
-.boton_mobile {
+.boton_mobile,
+.buscar_mobile {
   border: 0; }
 
 .titulo_principal {

@@ -60,11 +60,20 @@
 
 				</div> 
 
-				<div class="boton_buscar imagenes_menu">
-					<a href="#">
-						<img src="imagenes/search.png" alt="Boton de Busqueda" title="Boton de busqueda"/>
-					</a>
+
+				<div class="dropdown boton_buscar imagenes_menu">
+					<button class="btn dropdown-toggle buscar_mobile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="imagenes/search.png" alt="Boton de Busqueda" title="Boton buscar" height="120"/>
+					</button>
+
+					<div class="dropdown-menu">
+						<form class="text-center" role="search">
+    						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+    						<button class="btn btn-outline-success" type="submit">Buscar</button>
+   						</form>
+					</div>					
 				</div>
+
 
 				<div class="carrito_del_header imagenes_menu">
 					<a href="#">
