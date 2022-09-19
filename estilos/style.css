@@ -229,7 +229,7 @@ header {
 .info {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .parrafo_nosotros {
   display: inline-block;
@@ -246,6 +246,21 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   margin: 50px; }
+
+.comentarios {
+  color: #000;
+  background-color: #f3f2f2;
+  font-family: "Quicksand", sans-serif; }
+  .comentarios p {
+    font-size: 17px; }
+
+.parrafo_joyas {
+  background-image: linear-gradient(to right, lightgrey 0%, transparent 100%);
+  border-radius: 20px; }
+
+.slogan {
+  text-transform: uppercase;
+  font-family: "Lexend Tera", sans-serif; }
 
 .huno_contacto,
 .hdos_contacto {

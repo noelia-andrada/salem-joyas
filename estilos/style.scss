@@ -284,7 +284,7 @@ header {
 .info {
 	font-family: $font-quicksand;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 @mixin display($display) {
@@ -307,6 +307,24 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	margin: 50px;
+}
+
+.comentarios {
+	color: #000;
+	background-color: #f3f2f2;
+	font-family: $font-quicksand;
+	p {
+		font-size: 17px;
+	}
+}
+.parrafo_joyas {
+	background-image: linear-gradient(to right, lightgrey 0%, transparent 100%);
+	border-radius: 20px;
+}
+
+.slogan {
+	text-transform: uppercase;
+	font-family: $font-lexend;
 }
 
 .huno_contacto,
