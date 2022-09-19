@@ -366,6 +366,8 @@ header {
     padding: 0 5%; }
   .banner {
     height: 400px; }
+  .menu_desktop li a {
+    padding: 1px 5px; }
   .imagen_banco_joyeria {
     background-size: 100%;
     max-width: auto; }
@@ -373,9 +375,16 @@ header {
     max-width: 700px;
     width: 100%; }
   .form_contactos {
-    flex-wrap: wrap; }
+    flex-wrap: wrap; } }
+
+@media (max-width: 937px) {
   .htres_contactos {
     margin: 10% 0; } }
+
+@media (max-width: 966px) {
+  .menu_desktop li {
+    display: flex;
+    justify-content: center; } }
 
 @media (max-width: 850px) {
   .imagen_banco_joyeria {

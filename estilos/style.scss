@@ -461,7 +461,7 @@ header {
 		background-size: 1400px auto;
 	}
 
-		.titulo_buscar_banner {
+	.titulo_buscar_banner {
 		padding-top: 7%;
 	}
 
@@ -471,6 +471,14 @@ header {
 
 	.banner {
 		height: 400px;
+	}
+
+	.menu_desktop {
+		li {
+			a {
+				padding: 1px 5px;
+			}
+		}
 	}
 
 	.imagen_banco_joyeria {
@@ -487,10 +495,21 @@ header {
 		flex-wrap: wrap;
 	}
 
+}
+
+@media (max-width: 937px) {
 	.htres_contactos {
 		margin: 10% 0;
 	}
+}
 
+@media (max-width: 966px) {
+	.menu_desktop {
+		li {
+			display: flex;
+			justify-content: center;
+		}
+	}
 }
 
 @media (max-width: 850px) {
