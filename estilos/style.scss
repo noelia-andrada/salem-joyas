@@ -333,7 +333,11 @@ header {
 	display: flex;
 	justify-content: center;
 	text-transform: uppercase;
-	margin: 40px 0;
+	margin: 4% 0;
+}
+
+.htres_contactos {
+	font-family: $font-quicksand;
 }
 
 .form_contactos {
@@ -341,6 +345,11 @@ header {
 	justify-content: center;
 	padding-top: 30px;
 	padding-bottom: 50px;
+}
+
+.formulario {
+	display: flex;
+	justify-content: center;
 }
 
 .rellenar {
@@ -358,12 +367,29 @@ header {
 }
 
 .submit {
-	display: flex;
-	justify-content: center;
 	padding-top: 20px;
 	.btn {
-		background-color: #ffddbf;
+		background-color: lightgrey;
+		font-family: $font-quicksand;
+		text-transform: uppercase;
 	}
+}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .redes {
